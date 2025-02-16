@@ -27,7 +27,7 @@ jobs:
                   kustomize-version: "5.6.0"
             
             - name: Update Kubernetes resources
-                env: 
+              env: 
                   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
                 run: |
                   cd K8s
