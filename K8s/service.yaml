@@ -4,7 +4,7 @@ metadata:
   name: goserver-service
 spec:
   selector:
-    app: goserver-service
+    app: goserver
   ports:
-    - port: 8080
-      targetPort: 8080
+  - port: 8080
+    targetPort: 8080

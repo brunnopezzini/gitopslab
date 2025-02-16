@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name:  goserver
-  namespace: default
+  name: goserver
 spec:
   selector:
     matchLabels:
@@ -16,4 +15,4 @@ spec:
       - name: goserver
         image: goserver
         ports:
-          - containerPort: 8080
+        - containerPort: 8080
