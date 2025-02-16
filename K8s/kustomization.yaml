@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: goserver
-  newName: brunnopezzini/gitopslab
+  newName: brunnopezzini/gitopsfc
   newTag: Newtag
