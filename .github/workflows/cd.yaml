@@ -29,7 +29,7 @@ jobs:
             - name: Update Kubernetes resources
               env: 
                   DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-                run: |
+              run: |
                   cd K8s
                   kustomize edit set image goserver=$DOCKER_USERNAME/gitopslab:$GITHUB_SHA
 
@@ -40,7 +40,7 @@ jobs:
                   git commit -am "Bump docker version"
 
             - name: Push
-                uses: ad-m/github-push-action@master
-                with:
+              uses: ad-m/github-push-action@master
+              with:
                   github_token: ${{ secrets.TOKEN_GITHUB }}
                   repository: brunnopezzini/gitopslab
