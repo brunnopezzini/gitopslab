@@ -11,7 +11,7 @@ jobs:
 
         steps:
             - name: Checkout code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v2
 
             - name: Build and push image to Dockerhub
               uses: docker/build-push-action@v1.1.0
@@ -24,7 +24,7 @@ jobs:
             - name: Setup Kustomize
               uses: imranismail/setup-kustomize@v1
               with:
-                  kustomize-version: "5.6.0"
+                  kustomize-version: "3.6.1"
             
             - name: Update Kubernetes resources
               env: 
